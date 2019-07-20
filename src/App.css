@@ -86,13 +86,15 @@
 }
 
 .nav input{
-  height: 6vh;
-  margin-top: 2vh;
+  width: 20%;
+  height: 5vh;
+  margin-top: 2.5vh;
+  border-radius: 5px;
 }
 
 .nav figure{
   height: 8vh;
-  width: 70%;
+  width: 20%;
 }
 .nav figure img{
   height: 100%;
@@ -107,4 +109,27 @@
   padding-left: 15%;
   box-sizing: content-box;
   border-radius: 5px;
+}
+
+.nav-header{
+  width: 40%;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 30px;
+}
+.cl-white{
+  color: #fff;
+}
+.power{
+  text-align: right;
+  width: 20%;
+}
+
+.power-btn{
+  color: green;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 30px;
+  text-align: left;
+  margin-right: 20px;
 }
