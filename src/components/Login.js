@@ -12,7 +12,7 @@ const Login = () => {
         <div className="newline"></div>
         <span>Password: </span><input type="password" name="user[password]" />
         <div className="newline"></div>
-        <input type="submit" value="Submit" />
+        <a className="btn login-btn" href="/home"> Submit </a>
       </form>
     </div>
   );

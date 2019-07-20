@@ -1,16 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'react-virtualized/styles.css'
+import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.css';
-import * as serviceWorker from './serviceWorker';
+import Students from './components/Home'
+
 
 
 const routing =
   <Router>
      <Switch>
         <Route exact path="/" component={App} />
+        <Route exact path="/home" component={Students} />
       </Switch>
   </Router>
 
