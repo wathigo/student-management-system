@@ -55,17 +55,19 @@
 }
 
 .List{
-  background-color: grey;
-  height: 80vh;
+  background-color: #fff;
+  height: 75vh;
   padding-bottom: 20px;
   box-sizing: content-box;
   width: 80%;
   margin: 4vh auto 0 auto;
   padding: 20px;
+  box-shadow: 1px 1px 8px 8px rgba(255, 255, 255, .2);
 }
 
 .home{
   background-color: #000;
+  height: 100vh;
 }
 
 .name{
@@ -116,6 +118,7 @@
   height: 10vh;
   line-height: 10vh;
   font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
 }
 .cl-white{
   color: #fff;
@@ -126,7 +129,7 @@
 }
 
 .power-btn{
-  color: green;
+  color: #fff;
   height: 10vh;
   line-height: 10vh;
   font-size: 30px;
