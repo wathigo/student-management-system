@@ -14,8 +14,8 @@ class Students extends Component{
           <span className='firstname pd-left-10'>{this.list[index].firstname}</span>
           <span className='lastname pd-left-25'>{this.list[index].lastname}</span>
         </span>
-        <span className='id pd-left-25' > {this.list[index].id}</span>
-        <span className="more-info"><input type='button' className="sdt-btn" variant="outline-info" value='More Info'/></span>
+        <span className='id pd-left-25 adm' > {this.list[index].id}</span>
+        <span className="more-info"><a className="sdt-btn" href="/menu">More Info</a></span>
       </div>
     );
 }

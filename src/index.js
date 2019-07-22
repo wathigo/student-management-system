@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './App';
 import Students from './components/Home'
+import Menu from './components/Menu'
 
 
 
@@ -14,7 +15,8 @@ const routing =
   <Router>
      <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/home" component={Students} />
+        <Route path="/home" component={Students} />
+        <Route path="/menu" component={Menu} />
       </Switch>
   </Router>
 

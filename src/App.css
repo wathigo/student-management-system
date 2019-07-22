@@ -70,6 +70,11 @@
   height: 100vh;
 }
 
+.name, .adm, .more-info{
+  height: 50px;
+  line-height: 50px;
+}
+
 .name{
   margin-left: 20px;
 }
@@ -92,11 +97,12 @@
   height: 5vh;
   margin-top: 2.5vh;
   border-radius: 5px;
+  box-shadow: 1px 1px 8px 8px rgba(255, 255, 255, .2)
 }
 
 .nav figure{
   height: 8vh;
-  width: 20%;
+  width: 10%;
 }
 .nav figure img{
   height: 100%;
@@ -108,17 +114,18 @@
   background-color: green;
   color: #fff;
   width: 70%;
-  padding-left: 15%;
+  height: 50px;
+  line-height: 50px;
   box-sizing: content-box;
   border-radius: 5px;
+  padding: 7px 10px 7px 10px;
 }
 
 .nav-header{
-  width: 40%;
+  width: 50%;
   height: 10vh;
   line-height: 10vh;
   font-size: 30px;
-  text-shadow: 2px 2px 4px #000000;
 }
 .cl-white{
   color: #fff;
@@ -130,9 +137,50 @@
 
 .power-btn{
   color: #fff;
-  height: 10vh;
+  height: 7vh;
+  width: 3vw !important;
+  margin-top: 1.5vh;
   line-height: 10vh;
   font-size: 30px;
   text-align: left;
   margin-right: 20px;
+  box-shadow: 1px 1px 8px 8px rgba(255, 255, 255, .2) !important;
+  border-radius: 5px;
+}
+
+.menu{
+  height: 80vh;
+  margin: 20px auto 0 auto;
+  width: 60%;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 8px rgba(255, 255, 255, .2) !important;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.menu-item{
+  background: linear-gradient(to right bottom, rgb(25, 25, 25), rgba(0,0,0, .8) 65%);
+  color: #fff;
+  width: 41%;
+  height: 41%;
+  display: inline-block;
+  margin-top: 4%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  text-align: center;
+  padding: 10%;
+}
+
+.menu-item:first-of-type{
+  margin: 0 6% 0 6%;
+}
+
+.menu-item:last-of-type{
+  margin-left: 29.5%;
+}
+
+.menu-container{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }
