@@ -7,13 +7,13 @@ const App = () => {
     <Nav/>
     <div className="menu">
       <div className="menu-item">
-        Fees Info
+        <p>Fees Info</p>
       </div>
       <div className="menu-item">
-        Student Perfomance
+        <p>Student Perfomance</p>
       </div>
       <div className="menu-item">
-        Units Taken
+        <p>Units Taken</p>
       </div>
     </div>
     </div>
