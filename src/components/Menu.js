@@ -1,23 +1,26 @@
-import React from 'react';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { useSpring, animated } from 'react-spring'
 import Nav from './Nav'
 
-const App = () => {
+
+const Menu = () => {
   return (
     <div className="menu-container">
     <Nav/>
     <div className="menu">
-      <div className="menu-item">
-        <p>Fees Info</p>
+      <div className="menu-items">
+        <p><a href="/feesInfo">Fees Info</a></p>
       </div>
-      <div className="menu-item">
-        <p>Student Perfomance</p>
+      <div className="menu-items">
+        <p><a href="./perfomanceInfo">Student Perfomance</a></p>
       </div>
-      <div className="menu-item">
-        <p>Units Taken</p>
+      <div className="menu-items">
+        <p><a href='adInfo'>Arrival/Departure Info</a></p>
       </div>
     </div>
     </div>
   );
 }
 
-export default App;
+export default Menu;

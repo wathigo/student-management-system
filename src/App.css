@@ -98,15 +98,6 @@
   border-bottom: 1px solid #fff;
   margin-bottom: 10px;
 }
-
-.nav input{
-  width: 20%;
-  height: 5vh;
-  margin-top: 2.5vh;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px 8px rgba(255, 255, 255, .2)
-}
-
 .nav figure{
   height: 8vh;
   width: 10%;
@@ -139,7 +130,8 @@
 }
 .power{
   text-align: right;
-  width: 20%;
+  position: absolute;
+  right: 0;
 }
 
 .power-btn{
@@ -165,7 +157,7 @@
   border-top-right-radius: 50px;
 }
 
-.menu-item{
+.menu-items{
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -186,16 +178,21 @@
   box-sizing: border-box;
 }
 
-.menu-item p{
+.menu-items p{
   height: 20%;
   margin-top: 30%;
 }
 
-.menu-item:first-of-type{
+.menu-items p a{
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-items:first-of-type{
   margin: 0 6% 0 6%;
 }
 
-.menu-item:last-of-type{
+.menu-items:last-of-type{
   margin-left: 29.5%;
 }
 
@@ -209,4 +206,110 @@
     ),
     url(images/mbg.jpg);
   background-size: cover;
+}
+
+.search-input{
+  width: 30%;
+  display: inline-block;
+}
+
+.lable{
+  width: 60%;
+  display: inline-block;
+}
+.toggle{
+  display: none;
+}
+.toggle:checked ~ .mobile-nav-2{
+  display: block;
+}
+.toggle:checked ~ header .mobile-nav-1 label{
+  transform: rotate(360deg);
+}
+.toggle-label, .bm-burger-button button{
+  text-align: right;
+  position: absolute;
+  left: 95vw !important;
+  height: 7vh !important;
+  width: 3vw !important;
+  line-height: 7vh;
+  font-size: 50px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+}
+.mobile-nav-2{
+  visibility: hidden;
+  background: linear-gradient(to right bottom, rgb(204, 0, 153), rgb(255, 68, 34) 85%);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.bm-item-list{
+  position: absolute;
+  top: -100vh;
+  background-color: #90EE90;
+  padding-top: 50px;
+}
+
+.bm-item-list a{
+  text-decoration: none;
+  color: #000;
+  padding-right: 200px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Fees info styles */
+
+h3{
+  font-family: Calibri;
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 50px;
+  text-align: center;
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri;
+  color: #000;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align:;
+  background-color: #fff;
+  border-collapse: collapse;
+  border: 2px solid navy;
+  height: 40vh;
+}
+table.inner{
+  border: 0px
+}
+
+.ad-container table{
+  margin: 0 auto;
+  width: 50vw;
+  height: 60vh;
+}
+
+.fee-container, .perfomance-container, .ad-container{
+  background-color: #90EE90;
+  height: 100vh;
+}
+
+.rpt-btn{
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: blue;
+  position: absolute;
+  left: 80vw;
 }

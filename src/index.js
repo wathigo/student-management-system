@@ -8,6 +8,9 @@ import './index.css';
 import App from './App';
 import Students from './components/Home'
 import Menu from './components/Menu'
+import Fee from './components/FeesInfo'
+import Perfomance from './components/Perfomance'
+import Ad from './components/AD'
 
 
 
@@ -17,6 +20,9 @@ const routing =
         <Route exact path="/" component={App} />
         <Route path="/home" component={Students} />
         <Route path="/menu" component={Menu} />
+        <Route path="/feesInfo" component={Fee} />
+        <Route path="/perfomanceInfo" component={Perfomance} />
+        <Route path="/adInfo" component={Ad} />
       </Switch>
   </Router>
 

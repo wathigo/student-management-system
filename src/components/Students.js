@@ -23,7 +23,7 @@ class Students extends Component{
     return(
       <div className='overlay'>
         <div className='List'>
-        <h3 className="lable"> List of all Students</h3>
+        <h3 className="lable"> List of all Students</h3><input type="text" placeholder="search" className="search-input"/>
         <AutoSizer>
           {
             ({ width, height }) => {
